@@ -1567,12 +1567,29 @@ footer h4 {
     font-size: 16px;
   }
 
-  .container,
-  .container-wide {
-    width: 100%;
+ .container,
+.container-wide {
+  width: 100%;
 
-    padding: 1.2rem .7rem;
-  }
+  padding: 1.2rem 1.2rem;
+}
+
+  .container p {
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+  hyphens: auto;
+
+  -webkit-hyphens: auto;
+
+  word-break: normal;
+
+  overflow-wrap: break-word;
+}
+
+
 
   .page-header {
     padding: 2.5rem 1rem 2rem;
