@@ -1901,11 +1901,22 @@ footer h4 {
 }
 
 
+.premio-banner {
+    width: 100%;
+
+    margin-left: 0;
+
+    overflow: hidden;
+  }
+
   .premio-titulo-img {
+    width: 100%;
+
     max-width: 100%;
 
     transform: none;
   }
+
 
 
 
