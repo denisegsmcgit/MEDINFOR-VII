@@ -1555,6 +1555,9 @@ footer h4 {
 /* =========================================================
    MOBILE
 ========================================================= */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 600px) {
 
@@ -1566,7 +1569,9 @@ footer h4 {
 
   .container,
   .container-wide {
-    padding: 2rem 1rem;
+    width: 100%;
+
+    padding: 1.2rem .7rem;
   }
 
   .page-header {
@@ -1661,6 +1666,18 @@ footer h4 {
   }
 
   /* =========================================
+     DAY
+  ========================================= */
+
+  .day-card {
+    margin-bottom: 2rem;
+  }
+
+  .day-header {
+    padding-left: .2rem;
+  }
+
+  /* =========================================
      TABELAS RESPONSIVAS
   ========================================= */
 
@@ -1678,17 +1695,31 @@ footer h4 {
     display: none;
   }
 
-  .schedule-table tr {
-    background: #f7f7f7;
+  /* CARD */
 
-    margin-bottom: 1.2rem;
+  .schedule-table tr {
+    background: #fff;
+
+    margin-bottom: 1rem;
 
     border-radius: 14px;
 
-    padding: 1.2rem;
+    padding: 1rem;
 
     box-shadow: 0 2px 8px rgba(0,0,0,.05);
+
+    border: 1px solid rgba(0,0,0,.04);
   }
+
+  .schedule-table tr:nth-child(even) {
+    background: #f7f5f0;
+  }
+
+  .schedule-table tr:nth-child(odd) {
+    background: #ffffff;
+  }
+
+  /* CELULAS */
 
   .schedule-table td {
     border: none;
@@ -1698,68 +1729,73 @@ footer h4 {
     white-space: normal !important;
   }
 
+  /* HORÁRIOS */
+
   .schedule-table td:first-child,
   .schedule-table td:nth-child(2),
   .schedule-table td:nth-child(3) {
-    display: flex;
 
-    flex-direction: column;
+    display: inline-flex;
 
-    gap: .2rem;
+    align-items: center;
 
-    margin-right: 1.2rem;
+    width: auto;
+
+    margin-right: 1rem;
+
+    padding: 0;
+
+    gap: .35rem;
 
     font-weight: 600;
 
     color: var(--teal);
 
-    font-size: 1rem;
+    font-size: .95rem;
   }
+
+  /* LABELS */
 
   .schedule-table td:first-child::before {
     content: "Início";
-
-    font-size: .72rem;
-
-    text-transform: uppercase;
-
-    letter-spacing: .05em;
-
-    color: var(--gray);
   }
 
   .schedule-table td:nth-child(2)::before {
     content: "Fim";
-
-    font-size: .72rem;
-
-    text-transform: uppercase;
-
-    letter-spacing: .05em;
-
-    color: var(--gray);
   }
 
   .schedule-table td:nth-child(3)::before {
     content: "Duração";
+  }
 
-    font-size: .72rem;
+  .schedule-table td:first-child::before,
+  .schedule-table td:nth-child(2)::before,
+  .schedule-table td:nth-child(3)::before {
+
+    font-size: .65rem;
 
     text-transform: uppercase;
 
-    letter-spacing: .05em;
+    letter-spacing: .06em;
 
     color: var(--gray);
   }
 
+  /* SESSÃO */
+
   .schedule-table td:nth-child(4) {
+
     display: block;
 
     margin-top: .8rem;
 
     padding-top: .8rem;
 
+    padding-right: 0;
+
     border-top: 1px solid rgba(0,0,0,.08);
+
+    line-height: 1.7;
   }
 
   .schedule-table td:nth-child(4) strong {
@@ -1774,18 +1810,13 @@ footer h4 {
     margin: .2rem 0 .8rem;
   }
 
-  .schedule-table tr:nth-child(even) {
-    background: #f5f3ee;
-  }
-
-  .schedule-table tr:nth-child(odd) {
-    background: #fafafa;
-  }
+  /* QUEBRA DE TEXTO */
 
   .schedule-table td,
   .schedule-table td *,
   .schedule-table strong,
   .schedule-table em {
+
     white-space: normal !important;
 
     word-break: break-word;
