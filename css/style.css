@@ -1756,7 +1756,7 @@ footer h4 {
 
     align-items: center;
 
-    width: auto;
+    min-width: 92px;
 
     margin-right: 1rem;
 
@@ -1840,5 +1840,16 @@ footer h4 {
 
     overflow-wrap: anywhere;
   }
+
+  .schedule-table td:first-child,
+.schedule-table td:nth-child(2),
+.schedule-table td:nth-child(3) {
+
+  white-space: nowrap !important;
+
+  word-break: normal !important;
+
+  overflow-wrap: normal !important;
+}
 
 }

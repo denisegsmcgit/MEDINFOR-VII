@@ -28,27 +28,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    /* =========================================
-       DROPDOWN MOBILE
-    ========================================= */
+   /* =========================================
+   DROPDOWN MOBILE
+========================================= */
 
-    document.querySelectorAll('.nav-dropdown > a').forEach(link => {
+const dropdowns = document.querySelectorAll('.nav-dropdown');
 
-      link.addEventListener('click', e => {
+dropdowns.forEach(drop => {
 
-        // IMPORTANTE:
-        // precisa bater com o CSS (1250px)
-        if (window.innerWidth <= 1250) {
+  const link = drop.querySelector('a');
 
-          e.preventDefault();
+  link.addEventListener('click', e => {
 
-          link.parentElement.classList.toggle('open');
+    // IMPORTANTE:
+    // precisa bater com o CSS (1250px)
+    if (window.innerWidth <= 1250) {
 
-        }
+      e.preventDefault();
 
+      const isOpen = drop.classList.contains('open');
+
+      // FECHA TODOS
+      dropdowns.forEach(item => {
+        item.classList.remove('open');
       });
 
-    });
+      // ABRE APENAS O CLICADO
+      if (!isOpen) {
+        drop.classList.add('open');
+      }
+
+    }
+
+  });
+
+});
+
+/* =========================================
+   ACTIVE MOBILE MENU
+========================================= */
+
+document.querySelectorAll('.nav-menu a').forEach(link => {
+
+  link.addEventListener('click', () => {
+
+    if (window.innerWidth <= 1250) {
+
+      // REMOVE ACTIVE DE TODOS
+      document.querySelectorAll('.nav-menu a')
+        .forEach(item => item.classList.remove('active'));
+
+      // ATIVA APENAS O CLICADO
+      link.classList.add('active');
+
+    }
+
+  });
+
+});
 
     /* =========================================
        FECHAR AO CLICAR FORA
