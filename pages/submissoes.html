@@ -16,8 +16,7 @@
   <nav class="navbar" role="navigation" aria-label="Menu principal">
     <div class="nav-inner">
       <a class="nav-logo" href="../index.html" aria-label="MEDINFOR VII – Início">
-        <img src="https://paleturquoise-eland-828727.hostingersite.com/wp-content/uploads/2026/04/logo_medinfor-1.png"
-          alt="Logo MEDINFOR VII">
+        <img src="../img/logo.png" alt="Logo MEDINFOR VII" alt="Logo MEDINFOR VII">
       </a>
       <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menu">
         <span></span><span></span><span></span>
@@ -29,10 +28,17 @@
         <li><a href="submissoes.html">Submissões</a></li>
 
 
-        <li><a href="programacao.html">Programação</a></li>
-        <li><a href="paineis.html">Painéis</a></li>
-        <li><a href="mesa-redonda.html">Mesa-Redonda</a></li>
-        <li><a href="palestrantes.html">Palestrantes</a></li>
+        <li class="nav-dropdown">
+          <a href="#" aria-haspopup="true">Programa</a>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="programacao.html">Programação</a></li>
+            <li><a href="paineis.html">Painéis</a></li>
+            <li><a href="mesa-redonda.html">Mesa-Redonda</a></li>
+            <li><a href="palestrantes.html">Palestrantes</a></li>
+          </ul>
+        </li>
+
+
         <li class="nav-dropdown">
           <a href="#" aria-haspopup="true">Comissões</a>
           <ul class="dropdown-menu" role="list">
@@ -44,7 +50,7 @@
           <a href="#" aria-haspopup="true">Tira-dúvidas</a>
           <ul class="dropdown-menu" role="list">
             <li><a href="normas.html">Normas de inscrição e submissão</a></li>
-        
+
             <li><a href="termos.html">termos</a></li>
             <li><a href="template.html">Template de apresentação</a></li>
           </ul>
@@ -61,19 +67,79 @@
     <div class="container">
 
       <h2 class="section-title fade-in">Submissões</h2>
+
+<!--       <h3 class="sub-title fade-in">Cronograma</h3>
+ -->
+      <table class="styled-table price-table fade-in" aria-label="Cronograma das etapas de submissão">
+        <thead>
+          <tr>
+            <th scope="col">Etapas</th>
+            <th scope="col">Início</th>
+            <th scope="col">Término</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Inscrição de participante</td>
+            <td>12/05/2026</td>
+            <td>31/07/2026*</td>
+          </tr>
+
+          <tr>
+            <td>Submissão de resumos expandidos</td>
+            <td>06/05/2026</td>
+            <td>21/08/2026</td>
+          </tr>
+
+          <tr>
+            <td>Avaliação de resumos expandidos</td>
+            <td>22/06/2026</td>
+            <td>18/09/2026</td>
+          </tr>
+
+          <tr>
+            <td>Ressubmissão de resumos expandidos (com ressalvas)</td>
+            <td>21/09/2026</td>
+            <td>02/10/2026</td>
+          </tr>
+
+          <tr>
+            <td>Reavaliação de resumos expandidos</td>
+            <td>05/10/2026</td>
+            <td>16/10/2026</td>
+          </tr>
+
+          <tr>
+            <td>Submissão final (versão identificada)</td>
+            <td>19/10/2026</td>
+            <td>26/10/2026</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="table-note">
+        * Valores do 1º lote até 31 de julho de 2026.
+      </p>
       <h3 class="sub-title fade-in">Instruções para os autores</h3>
 
       <h3 class="sub-title fade-in" style="font-size:1.1rem; color:var(--teal);">PAPERS</h3>
 
-      <p class="fade-in">Na submissão de trabalhos deve ser enviado um resumo expandido de <strong>6.000 a 6.500
-          caracteres</strong> (incluindo espaços), mencionando: painel temático da conferência; título da comunicação;
-        objetivos, métodos, principais resultados e conclusões; 3 a 5 palavras-chave.</p>
+      <p class="fade-in">
+        Na submissão de trabalhos deverá ser enviado um resumo expandido com extensão entre
+        <strong>6.000 e 6.500 caracteres</strong> (com espaços), contendo: painel temático da
+        comunicação; título; objetivos; metodologia; principais resultados; conclusões;
+        referências, conforme as normas da APA (7ª edição); e de 3 a 5 palavras-chave.
+      </p>
 
-      <p class="fade-in">Os resumos não devem conter qualquer referência que identifique o(s) autor(es); aquando da
-        submissão, nos metadados, devem sempre ser indicados o e-mail e a afiliação do(s) autor(es).</p>
-
+      <p class="fade-in">
+        Os resumos deverão ser submetidos sem qualquer identificação de autoria no texto,
+        garantindo a avaliação cega por pares. As informações do(s) autor(es), incluindo nome,
+        e-mail e afiliação institucional, deverão ser preenchidas exclusivamente nos metadados
+        da submissão.
+      </p>
       <div class="notice fade-in">
-        <p><strong>Língua:</strong> Português, Castelhano, Inglês, Francês</p>
+        <p><strong>Língua:</strong> Português, Espanhol, Inglês, Francês</p>
       </div>
 
       <div class="notice fade-in">
@@ -83,7 +149,8 @@
       </div>
 
       <p class="fade-in">As pessoas interessadas em participar no VII Colóquio Internacional A Medicina na Era da
-        Informação (VII MEDINFOR) podem enviar resumo expandido, adequando-se às seguintes Sessões de Comunicações:</p>
+        Informação (VII MEDINFOR) podem enviar resumo expandido, desde que estejam alinhados a um dos seguintes Painéis
+        Temáticos:</p>
 
       <ol class="fade-in" style="padding-left:1.5rem; margin: 1rem 0 1.5rem;">
         <li style="padding:.4rem 0;"><a href="paineis.html"
@@ -100,6 +167,24 @@
             Identidade, Patrimônio e Interculturalidade em Saúde</a></li>
       </ol>
 
+<div class="fade-in" style="margin-top:1.2rem;">
+  <a 
+    href="../pages/template.html"
+    style="
+      display:inline-block;
+      padding:.45rem 1rem;
+      border:1px solid var(--navy);
+      border-radius:var(--radius);
+      color:var(--navy);
+      text-decoration:none;
+      font-size:.82rem;
+      font-weight:500;
+      background:transparent;
+    "
+  >
+    ↓ Template de apresentação 
+  </a>
+</div>
       <!--   <div class="notice warning fade-in">
         <p><strong>Obs.:</strong> Veja <a href="paineis.html" style="color:var(--teal);">Sessões Temáticas</a> com os resumos de cada painel.</p>
       </div> -->
@@ -107,27 +192,30 @@
       <!--       <p class="fade-in">A proposta de comunicação deverá ser enviada através da plataforma <strong>XXXXX</strong>:</p>
  -->
 
-      <!-- NORMAS APA -->
-      <div class="notice fade-in" style="margin-top:2rem;">
-        <h3 class="sub-title" style="margin-top:0;">Normas de Formatação (APA)</h3>
+  <!-- DIREITOS AUTORAIS -->
+      <h3 class="sub-title fade-in">Declaração de Direito Autoral</h3>
 
-        <p>Os trabalhos submetidos ao VII MEDINFOR deverão seguir as normas da
-          <strong>APA – American Psychological Association (7ª edição)</strong>.
-        </p>
+      <p class="fade-in">
+        Os autores que submetem propostas para esta conferência concordam com os seguintes termos:
+      </p>
 
-        <!--   <ul style="padding-left:1.3rem; margin-top:1rem; line-height:1.8;">
-          <li>Fonte Times New Roman, tamanho 12;</li>
-          <li>Espaçamento entre linhas de 1,5;</li>
-          <li>Texto justificado;</li>
-          <li>Margens de 2,5 cm;</li>
-          <li>Citações e referências conforme APA 7ª edição;</li>
-          <li>Inserir referências bibliográficas ao final do resumo expandido.</li>
-        </ul> -->
+      <p class="fade-in">
+        <strong>a)</strong>
+        Autores conservam os direitos de copyright sobre o seu trabalho, ao permitirem à conferência
+        colocar este trabalho não publicado sob uma Licença Creative Commons.
+      </p>
 
-        <p style="margin-top:1rem;">
-          Recomenda-se que os autores revisem cuidadosamente a formatação antes da submissão.
-        </p>
-      </div>
+      <p class="fade-in">
+        <strong>b)</strong>
+        Authors are able to waive the terms of the CC license and enter into separate arrangements
+        for publication.
+      </p>
+
+      <p class="fade-in">
+        <strong>c)</strong>
+        Authors are encouraged to share their work online before and after the conference.
+      </p>
+
 
       <div class="fade-in" style="margin-top:1.5rem;">
         <a href="#" class="btn btn-primary">🡆 Submeter comunicação</a>
@@ -234,15 +322,6 @@
 
             <a href="mailto:denisegsmc@alumni.usp.br">
               denisegsmc@alumni.usp.br
-            </a>
-          </p>
-
-          <p>
-            Pessoa 2 —
-            Designer e Editora de Publicações Científicas<br>
-
-            <a href="mailto:pessoa@gmail.com">
-              pessoa@gmail.com
             </a>
           </p>
 
