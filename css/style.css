@@ -1748,28 +1748,54 @@ footer h4 {
 
   /* HORÁRIOS */
 
-  .schedule-table td:first-child,
-  .schedule-table td:nth-child(2),
-  .schedule-table td:nth-child(3) {
+  /* LINHA DOS HORÁRIOS */
 
-    display: inline-flex;
+.schedule-table tr {
 
-    align-items: center;
+  position: relative;
+}
 
-    min-width: 92px;
+.schedule-table td:first-child,
+.schedule-table td:nth-child(2),
+.schedule-table td:nth-child(3) {
 
-    margin-right: 1rem;
+  display: inline-block;
 
-    padding: 0;
+  width: 32%;
 
-    gap: .35rem;
+  vertical-align: top;
 
-    font-weight: 600;
+  padding: 0;
 
-    color: var(--teal);
+  margin-bottom: .8rem;
 
-    font-size: .95rem;
-  }
+  white-space: nowrap !important;
+
+  word-break: normal !important;
+
+  overflow-wrap: normal !important;
+}
+
+/* LABEL */
+
+.schedule-table td:first-child::before,
+.schedule-table td:nth-child(2)::before,
+.schedule-table td:nth-child(3)::before {
+
+  display: block;
+
+  margin-bottom: .2rem;
+
+  font-size: .62rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: .08em;
+
+  color: var(--gray);
+
+  font-weight: 600;
+}
 
   /* LABELS */
 
