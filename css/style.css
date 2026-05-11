@@ -1254,13 +1254,27 @@ footer h4 {
 }
 
 /*PREMIO*/
+.premio-banner {
+  width: 100vw;
+
+  margin-left: calc(50% - 50vw);
+
+  display: flex;
+
+  justify-content: center;
+}
+
 .premio-titulo-img {
   width: 100%;
   max-width: 950px;
+
   height: auto;
+
   display: block;
-  margin: 0 auto;
 }
+
+
+
 /* =========================================================
    RESPONSIVE
 ========================================================= */
