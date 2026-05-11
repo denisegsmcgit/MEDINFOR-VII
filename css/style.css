@@ -98,7 +98,7 @@ body {
 }
 
 .nav-logo img {
-  height: 32px;
+  height: 45px;
   display: block;
   transition: transform 0.3s ease, filter 0.4s ease;
 }
@@ -1253,6 +1253,14 @@ footer h4 {
   border-radius: 999px;
 }
 
+/*PREMIO*/
+.premio-titulo-img {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 /* =========================================================
    RESPONSIVE
 ========================================================= */
@@ -1552,9 +1560,7 @@ footer h4 {
 
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+
 /* =========================================================
    MOBILE
 ========================================================= */
@@ -1876,6 +1882,18 @@ footer h4 {
   word-break: normal !important;
 
   overflow-wrap: normal !important;
+}
+
+.premio-titulo-img {
+  width: 100%;
+  max-width: 950px;
+
+  display: block;
+
+  margin: 0 auto 1rem;
+
+  padding: 0;
+  
 }
 
 }
