@@ -1268,9 +1268,11 @@ footer h4 {
   width: 100%;
   max-width: 780px;
 
-  height: auto;
-
   display: block;
+
+  margin: 0 auto 1rem;
+
+  padding: 0;
 }
 
 
@@ -1898,24 +1900,13 @@ footer h4 {
   overflow-wrap: normal !important;
 }
 
-.premio-titulo-img {
-  width: 100%;
-  max-width: 950px;
 
-  display: block;
+  .premio-titulo-img {
+    max-width: 100%;
 
-  margin: 0 auto 1rem;
+    transform: none;
+  }
 
-  padding: 0;
-  
-}
 
-.premio-titulo-img {
-  max-width: 100%;
-
-  margin: 0 auto 1rem;
-
-  transform: translateX(10px);
-}
 
 }
